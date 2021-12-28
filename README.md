@@ -5,7 +5,7 @@ Checks if a matrix is diagonally dominant. First, the dimensions of the input ma
 
 ## mask_band
 This function takes the following variables as inputs:
-"n", indicating the dimensions of the register,
+"n", indicating the dimensions of the matrix,
 
 "type", which can take 'band' or 'btdr' values,
 
@@ -14,4 +14,4 @@ This function takes the following variables as inputs:
 "p", denoting the lower half. 
 
 
-The output of the function is the "P" matrix. When the variable "type" gets the value 'band', the band matrix is ​​created. When it gets the value 'btdr', then, with the help of the functions 'floor' and 'rem', a diagonal matrix block is created and returned. This is done as follows: Initialize the matrix P with zero elements and dimensions n * n. Then, as the pronunciation states, if p does not exactly divide n, we will use the variable "k", which indicates the number of diagonal blocks that will have a dimension p * p. The variable "r" is used for the extra block of the diagonal, where it is its dimension. The intrinsic function "blkdiag" of MATLAB, helps us to create the register P. In case p divides exactly n, through "blkdiag" the matrix P is created, which has k diagonal blocks of dimensions p * p. 
+The output of the function is the "P" matrix. When the variable "type" gets the value 'band', the band matrix is ​​created. When it gets the value 'btdr', then, with the help of the functions 'floor' and 'rem', a diagonal matrix block is created and returned. This is done as follows: Initialize the matrix P with zero elements and dimensions n * n. Then, as the pronunciation states, if p does not exactly divide n, we will use the variable "k", which indicates the number of diagonal blocks that will have a dimension p * p. The variable "r" is used for the extra block of the diagonal, where it is its dimension. The intrinsic function "blkdiag" of MATLAB, helps us to create the matrix P. In case p divides exactly n, through "blkdiag" the matrix P is created, which has k diagonal blocks of dimensions p * p. 
