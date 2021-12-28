@@ -1,5 +1,5 @@
 function [P] = mask_band(n,type, p,q)
-%Author: жытиос-бемифекос папамийокаоу, а.л:235949, гл.суццяажгс:1/1/2020 
+
 
 if (type=='band')
     q=p;
