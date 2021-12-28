@@ -1,5 +1,4 @@
 function [dflag, discrC, discrR] = dd_check(A)
-%Author: жытиос-бемифекос папамийокаоу, а.л:235949, гл.суццяажгс:24/12/2019 
 
 
 discrR=true;
